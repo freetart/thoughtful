@@ -1,39 +1,30 @@
-.hero {
-  background-color: color(primary);
+.section-one {
+  margin-top: 25rem;
 
   &-content {
     @include sectionSpacing();
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
     grid-gap: 4rem;
+    align-items: center;
     text-align: center;
   }
 
   &-info {
-    h4 {
+    h3 {
       @include headingStyles();
-      font-size: size(xs);
-    }
-
-    h2 {
-      @include headingStyles();
-      font-size: size(xl) + 2rem;
+      font-size: size(xl);
     }
 
     p {
       @include textStyles();
       font-size: size(md);
-      width: 90%;
+      width: 70%;
       margin: 2rem auto;
     }
   }
 
   &-img {
     width: 100%;
-    max-width: 85rem;
-    min-width: 80rem;
   }
 }
