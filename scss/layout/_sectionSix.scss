@@ -1,0 +1,42 @@
+.section-six {
+  @include sectionSpacing();
+  background-color: color(black);
+
+  &-content {
+    @include flexLayout();
+    color: color(primary);
+  }
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl);
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    @include headingStyles();
+    font-size: size(lg);
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(sm);
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  a {
+    font-size: size(sm);
+    color: color(primary);
+    text-decoration: underline;
+    transition: letter-spacing 0.3s ease;
+
+    &:hover {
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .process {
+    margin-bottom: 4rem;
+  }
+}
