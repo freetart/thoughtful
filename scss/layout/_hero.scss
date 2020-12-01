@@ -1,0 +1,39 @@
+.hero {
+  background-color: color(primary);
+
+  &-content {
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    grid-gap: 4rem;
+    text-align: center;
+  }
+
+  &-info {
+    h4 {
+      @include headingStyles();
+      font-size: size(xs);
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      width: 90%;
+      margin: 2rem auto;
+    }
+  }
+
+  &-img {
+    width: 100%;
+    max-width: 80rem;
+    min-width: 75rem;
+  }
+}

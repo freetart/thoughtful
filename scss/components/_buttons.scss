@@ -1,0 +1,16 @@
+.btn {
+  @include textStyles();
+  cursor: pointer;
+  padding: 1rem;
+  font-size: size(md);
+  background-color: transparent;
+  border: 0.1rem solid color(black);
+  box-shadow: 0.2rem 0.2rem 0.1rem color(black);
+  transition: all 0.3s ease;
+  font-family: "Orbitron", sans-serif;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0.2rem 0.2rem 1rem color(black);
+  }
+}
