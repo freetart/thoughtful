@@ -1,0 +1,44 @@
+.section-two {
+  @include sectionSpacing();
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/codebg.jpg") center/cover no-repeat fixed;
+  position: relative;
+
+  &-content {
+    color: color(white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    h3 {
+      @include headingStyles();
+      font-size: size(xl);
+      margin-bottom: 2rem;
+    }
+
+    label {
+      @include textStyles();
+      font-size: size(xs);
+    }
+
+    input {
+      padding: 1rem;
+      width: 100%;
+      outline: 0;
+      border: 0;
+      // background-color: rgba(0, 0, 0, 0.5);
+      background-color: transparent;
+      border-bottom: 0.3rem solid color(white);
+      color: color(white);
+      margin-bottom: 2rem;
+      transition: border-bottom 0.5s ease;
+    }
+
+    input:focus {
+      border-bottom: 0.3rem solid color(primary);
+    }
+  }
+}
