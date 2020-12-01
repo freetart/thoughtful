@@ -1,6 +1,6 @@
-.section-three {
-  background-color: color(black);
+.section-five {
   @include sectionSpacing();
+  background-color: color(primary);
 
   &-content {
     display: grid;
@@ -14,12 +14,17 @@
   }
 
   &-info {
-    color: color(white);
     text-align: center;
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl);
+      margin-bottom: 4rem;
+    }
 
     h3 {
       @include headingStyles();
-      font-size: size(xl);
+      font-size: size(xl) + 2rem;
     }
 
     p {
@@ -32,17 +37,21 @@
 
   &-img {
     text-align: center;
+
     img {
       width: 30rem;
-      box-shadow: 0.4rem 0.4rem 0.1rem color(white);
+      box-shadow: 0.4rem 0.4rem 0.1rem color(black);
     }
 
     p {
       @include textStyles();
-      margin-top: 2rem;
       font-size: size(xs);
-      color: color(white);
-      text-align: center;
+    }
+
+    a {
+      color: color(black);
+      font-size: size(xs);
+      border-bottom: 0.3rem solid color(black);
     }
   }
 }

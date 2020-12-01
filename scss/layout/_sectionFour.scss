@@ -1,5 +1,8 @@
 .section-four {
   &-content {
+    max-width: 1300px;
+    margin: 0 auto;
+
     h2 {
       @include headingStyles();
       text-align: center;
@@ -37,15 +40,13 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      max-width: 1300px;
-      margin: 0 auto;
 
       .company {
         margin: 4rem;
       }
 
       img {
-        width: 15rem;
+        width: 13rem;
       }
     }
   }
