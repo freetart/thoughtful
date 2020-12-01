@@ -15,3 +15,9 @@
   letter-spacing: 0.2rem;
   text-transform: capitalize;
 }
+
+@mixin textStyles() {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+}

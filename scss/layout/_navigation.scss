@@ -1,0 +1,29 @@
+.header {
+  background-color: color(black);
+
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.1rem solid color(white);
+
+    h3 {
+      font-size: size(sm);
+    }
+
+    a {
+      width: 100%;
+      font-size: size(sm);
+      color: color(white);
+      border: 0.1rem solid color(white);
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: color(white);
+        color: color(black);
+      }
+    }
+  }
+}
