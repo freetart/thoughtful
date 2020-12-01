@@ -1,6 +1,6 @@
 .section-two {
   @include sectionSpacing();
-  height: 40vh;
+  height: 50vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/codebg.jpg") center/cover no-repeat fixed;
   position: relative;
@@ -11,7 +11,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
 
     h3 {
       @include headingStyles();

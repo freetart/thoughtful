@@ -1,0 +1,46 @@
+.section-three {
+  background-color: color(black);
+  @include sectionSpacing();
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  &-info {
+    color: color(white);
+    text-align: center;
+
+    h3 {
+      @include headingStyles();
+      font-size: size(xl);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      width: 70%;
+      margin: 2rem auto;
+    }
+  }
+
+  &-img {
+    text-align: center;
+    img {
+      width: 30rem;
+      // border: 0.3rem solid color(white);
+      box-shadow: 0.4rem 0.4rem 0.1rem color(white);
+    }
+
+    p {
+      @include textStyles();
+      margin-top: 2rem;
+      font-size: size(xs);
+      color: color(white);
+      text-align: center;
+    }
+  }
+}
