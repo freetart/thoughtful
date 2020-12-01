@@ -1,0 +1,52 @@
+.section-four {
+  &-content {
+    h2 {
+      @include headingStyles();
+      text-align: center;
+      font-size: size(xl);
+      margin: 4rem 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 30rem;
+      }
+
+      h3 {
+        @include headingStyles();
+        font-size: size(lg);
+        margin: 2rem 0;
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(sm);
+        width: 70%;
+        margin: auto;
+      }
+    }
+
+    .companies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      .company {
+        margin: 4rem;
+      }
+
+      img {
+        width: 15rem;
+      }
+    }
+  }
+}
