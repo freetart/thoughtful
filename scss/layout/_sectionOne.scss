@@ -1,6 +1,10 @@
 .section-one {
   margin-top: 25rem;
 
+  @include response(xl) {
+    margin-top: 10rem;
+  }
+
   &-content {
     @include sectionSpacing();
     display: grid;
@@ -8,6 +12,10 @@
     grid-gap: 4rem;
     align-items: center;
     text-align: center;
+
+    @include response(xl) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-info {

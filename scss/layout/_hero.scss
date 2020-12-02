@@ -1,6 +1,10 @@
 .hero {
   background-color: color(primary);
 
+  @include response(xxl) {
+    position: relative;
+  }
+
   &-content {
     @include sectionSpacing();
     display: grid;
@@ -11,9 +15,29 @@
     grid-gap: 4rem;
     text-align: center;
     color: color(white);
+
+    @include response(xxl) {
+      grid-template-columns: 1fr;
+      height: 100vh;
+    }
+
+    @include response(sm) {
+      height: 70vh;
+    }
   }
 
   &-info {
+    @include response(xxl) {
+      position: absolute;
+      top: 10rem;
+    }
+
+    @include response(sm) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     h4 {
       @include headingStyles();
       font-size: size(xs);
@@ -36,6 +60,29 @@
     width: 100%;
     max-width: 85rem;
     min-width: 80rem;
+
+    @include response(xxl) {
+      max-width: 65rem;
+      min-width: 60rem;
+      position: absolute;
+      top: 45rem;
+      margin-left: 23%;
+    }
+
+    @include response(xl) {
+      margin-left: 13%;
+    }
+
+    @include response(lg) {
+      max-width: 50rem;
+      min-width: 45rem;
+      margin-top: 15rem;
+    }
+
+    @include response(sm) {
+      display: none;
+      margin: 0;
+    }
   }
 
   .btn {

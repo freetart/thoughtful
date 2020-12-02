@@ -4,6 +4,10 @@
   top: 0;
   z-index: 100;
 
+  @include response(lg) {
+    display: none;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-around;

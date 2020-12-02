@@ -11,6 +11,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    @include response(md) {
+      grid-template-columns: 1fr;
+    }
+
     h3 {
       @include headingStyles();
       font-size: size(md);
