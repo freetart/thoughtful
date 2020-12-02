@@ -76,12 +76,12 @@
     @include response(lg) {
       max-width: 50rem;
       min-width: 45rem;
-      margin-top: 15rem;
+      margin-top: 5rem;
+      margin-right: 10rem;
     }
 
     @include response(sm) {
       display: none;
-      margin: 0;
     }
   }
 
