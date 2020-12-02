@@ -1,0 +1,61 @@
+.footer {
+  @include sectionSpacing();
+  background-color: color(black);
+
+  &-content {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h3 {
+      @include headingStyles();
+      font-size: size(md);
+      color: color(primary);
+      margin-bottom: 2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      @include textStyles();
+      color: color(white);
+      font-size: size(xs);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: color(primary);
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    p {
+      color: color(white);
+      font-size: size(xs);
+    }
+
+    a {
+      color: color(white);
+      font-size: size(lg);
+      margin-left: 2rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: color(primary);
+      }
+    }
+  }
+}
