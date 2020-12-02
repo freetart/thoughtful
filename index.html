@@ -10,6 +10,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Thoughtful</title>
   </head>
@@ -53,7 +54,7 @@
     <main>
       <!-- SECTION ONE -->
       <section class="section-one">
-        <div class="section-one-content">
+        <div class="section-one-content" data-aos="fade-right">
           <div class="section-one-info">
             <h3>Get started in your career, or get your tuition back.</h3>
             <p>
@@ -70,7 +71,7 @@
       </section>
       <!-- END OF SECTION ONE -->
       <!-- SECTION TWO -->
-      <section class="section-two">
+      <section class="section-two" data-aos="fade-left">
         <div class="section-two-content">
           <h3>Take a look inside the course curriculum</h3>
           <label for="email">Please enter your email</label>
@@ -81,7 +82,7 @@
       <!-- END OF SECTION TWO -->
       <!-- SECTION THREE -->
       <section class="section-three">
-        <div class="section-three-content">
+        <div class="section-three-content" data-aos="fade-left">
           <div class="section-three-info">
             <h3>
               One on One. <br />
@@ -102,7 +103,7 @@
       <!-- END OF SECTION THREE -->
       <!-- SECTION FOUR -->
       <section class="section-four">
-        <div class="section-four-content">
+        <div class="section-four-content" data-aos="fade-right">
           <h2>How You'll Learn</h2>
           <div class="cards">
             <div class="card">
@@ -149,7 +150,7 @@
       <!-- END OF SECTION FOUR -->
       <!-- SECTION FIVE -->
       <section class="section-five">
-        <div class="section-five-content">
+        <div class="section-five-content" data-aos="fade-left">
           <div class="section-five-info">
             <h2>Outcomes</h2>
             <h3>$63,000</h3>
@@ -168,7 +169,7 @@
       <!-- END OF SECTION FIVE -->
       <!-- SECTION SIX -->
       <section class="section-six">
-        <div class="section-six-content">
+        <div class="section-six-content" data-aos="fade-right">
           <h2>Admissions process</h2>
           <div class="process">
             <h3>1. Online Application</h3>
@@ -209,7 +210,7 @@
       <!-- END OF SECTION SIX -->
       <!-- SECTION SEVEN -->
       <section class="section-seven">
-        <div class="section-seven-content">
+        <div class="section-seven-content" data-aos="fade-left">
           <img src="images/drawing.jpg" alt="" />
           <div class="section-seven-info">
             <h2>Are you ready to become a Developer?</h2>
@@ -281,6 +282,13 @@
       </div>
     </footer>
     <!-- END OF FOOTER -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
