@@ -1,0 +1,18 @@
+.section-seven-content {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl) + 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem color(black);
+  }
+
+  .btn {
+    margin-right: 2rem;
+  }
+}
