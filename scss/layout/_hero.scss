@@ -1,5 +1,10 @@
 .hero {
-  background-color: color(primary);
+  background: color(primary);
+
+  @include response(sm) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/images/codebg.jpg);
+  }
 
   @include response(xxl) {
     position: relative;
